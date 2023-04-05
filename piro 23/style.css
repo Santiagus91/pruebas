@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    background-repeat: no-repeat;
+   /*pone todo en fila   background-image: url(https://img.freepik.com/premium-photo/silhouette-group-worker-civil-engineer-safety-uniform-install-reinforced-steel_33835-192.jpg);
+   */ background-size:cover;
+    background-color: #9c8e90;
+  }
+
+
+header {
+   
+    top: 0;
+    line-height:0px ;
+    width: 100%;
+    display: flex; /*pone todo en fila  */
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    background-color: #880517;
+    position:fixed;
+    cursor: pointer;
+    z-index: 99;
+  }
+  
+  .logo img {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .title {
+    text-align: center;
+    flex-grow: 1;
+    margin-left: 120px;
+    color: white;
+   font-family: sans-serif;
+}
+  
+  nav ul {
+    margin-right:20px;
+    margin-top:-20px; /* posision horisontal */
+    display: flex;
+    justify-content: flex-end;
+    
+  }
+  
+  nav li {
+    margin-left: 20px;
+  }
+  
+  nav li:first-child {
+    margin-left: 0px; /* posision vertical */
+    
+  }
+
+.text{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 40px;
+  }
+
+
+
+
+
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<  animacion de imagens   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+ .slider{                                                                           /**/
+                                                                                    /**/
+  width:100%;                                                                       /**/
+  height: 250px;                                                                    /**/
+  overflow: hidden;                                                                 /**/
+                                                                                    /**/
+  }                                                                                 /**/
+  .slider ul{                                                                       /**/
+    display: flex;                                                                  /**/
+    animation: cambio 20s infinite alternate linear;                                /**/
+    width: 400%;                                                                    /**/
+  }                                                                                 /**/
+                                                                                    /**/
+  .slider li{                                                                       /**/
+    width: 100%;                                                                    /**/
+    list-style: none;                                                               /**/
+  }                                                                                 /**/
+                                                                                    /**/
+  .slider img{                                                                      /**/           
+                                                                                    /**/
+    width: 100%;                                                                    /**/
+    height: 50%;                                                                    /**/    
+  }                                                                                 /**/
+                                                                                    /**/
+@keyframes cambio{                                                                  /**/
+    0%{margin-left: 0;}                                                             /**/
+    20%{margin-left: 0;}                                                            /**/
+                                                                                    /**/
+    25%{margin-left: -100%;}                                                        /**/
+    45%{margin-left: -100%;}                                                        /**/
+                                                                                    /**/
+    50%{margin-left: -200%;}                                                        /**/
+    70%{margin-left: -200%;}                                                        /**/
+                                                                                    /**/
+    75%{margin-left: -300%;}                                                        /**/
+    100%{margin-left: -300%;}                                                       /**/
+  }                                                                                 /**/
+                                                                                    /**/
+/*<<<<<<<<<<<<<<<<<<<<<< fin de animacion de imagens   >>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+
+
+
+
+
+
+  footer{
+    color: white;
+    background-color: red;
+    background: red;
+    font-size: 25px;
+    font-family: sans-serif;
+  }
+
+
+  .noticia{
+    color: white;
+    font-size: 25px;
+    font-family: sans-serif;
+  }
+
+  .revoque{
+    height: 400px;
+    margin: 20px;
+  }
