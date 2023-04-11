@@ -1,137 +1,300 @@
 *{
-    margin: 0;
-    padding: 0;
-    
+  margin: 0;
+  padding: 0;
+  
 }
 
 body{
-    background-repeat: no-repeat;
-   /*pone todo en fila   background-image: url(https://img.freepik.com/premium-photo/silhouette-group-worker-civil-engineer-safety-uniform-install-reinforced-steel_33835-192.jpg);
-   */ background-size:cover;
-    background-color: #9c8e90;
-  }
+  
+  background-repeat: no-repeat;
+   background-size:cover;
+  background-color: #a8a69a;
+} 
 
 
 header {
-   
-    top: 0;
-    line-height:0px ;
-    width: 100%;
-    display: flex; /*pone todo en fila  */
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px;
-    background-color: #880517;
-    position:fixed;
-    cursor: pointer;
-    z-index: 99;
-  }
-  
-  .logo img {
-    width: 80px;
-    height: 80px;
-  }
-  
-  .title {
-    text-align: center;
-    flex-grow: 1;
-    margin-left: 120px;
-    color: white;
-   font-family: sans-serif;
+ background-color: #880517; 
+ display: flex; 
+ justify-content: space-between;
+ align-items: center; 
+ width:100%;
+ height:80px ;
+  position:fixed; 
+  z-index: 99;
 }
+
+h1{
+  font-size: 50px;
+
+}
+.logo img {    
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: 1px;
+  left: 0;
+  padding: 5px;
   
-  nav ul {
-    margin-right:20px;
-    margin-top:-20px; /* posision horisontal */
-    display: flex;
-    justify-content: flex-end;
-    
+}
+/**/
+/**/
+.title{
+  text-align: center;  
+    width: 450px;;
+}
+
+
+@media screen and ( min-width:768px){
+  .menu img {
+
+  display: none;
+  
+}
+}
+
+.menu img {
+ 
+  width: 30px;
+  height: 30px;
+
+}
+
+.menu{
+  position: absolute;
+  top: 1.7rem;
+  right: 2.0rem;
+  cursor: pointer;
+  z-index: 99;
+
+}
+
+
+
+
+
+
+
+@media screen and ( min-width:768px){
+  .menu img {
+    width: 50px;
+    height: 50px;
+   
+  
   }
-  
-  nav li {
-    margin-left: 20px;
+ 
+
+
   }
-  
-  nav li:first-child {
-    margin-left: 0px; /* posision vertical */
+ 
+ 
+ /*minimo */ 
+  @media(max-width:768px){
+
+    .title{
+      width: 270px;;
+    }
+   
+    h1{
+      font-size:37px;
     
+    }
+
+    nav ul {    
+      text-transform:uppercase;
+      background-color: #000000d5;
+   /*width: 20rem;  altura*/
+   /*height: 20rem;  el ancho */ 
+  
+   position: absolute;
+   text-align:center; 
+
+   align-self: center;
+
+   flex-flow: column;
+   display: flex;
+   justify-content: flex-end;
+   list-style: none;
+   padding: 20px;
+
+   height: 17rem;
+   top : 0.00rem;
+   right :0.00rem;
+   
+  }
+  .ula {
+    transition: transform 0.3s;
+    transform: translateY(-100%);
+    
+   
   }
 
-.text{
-    color: rgb(255, 255, 255);
+  }
+  @media screen and ( min-width:768px){
+    
+     
+    
+    
+    
+
+    nav ul {    
+ 
+      position: absolute;
+      width: 50rem;
+      text-transform:uppercase;
+      display: flex;
+      flex-direction: row;
+      
+      justify-content: flex-end;
+      top:0px;
+      right: 0px;
+      list-style: none;
+      
+    }
+    
+    }
+    
+   
+
+/**/
+
+
+
+
+.toge-menu__checkbox:checked + .ula {
+
+ transform: translateY(0);
+
+}
+
+.toge-menu__checkbox{
+  display: none;
+}
+
+
+nav ul li{
+  margin: 20px 10px;
+  color: #fdfafad5;
+}
+
+nav ul li a {
+  color: #f8f8f8;
+}
+
+
+
+
+
+.text {
     text-align: center;
-    margin-top: 40px;
+   
   }
 
 
 
 
 
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<  animacion de imagens   >>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
-/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<  animacion de imagens   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-
- .slider{                                                                           /**/
-                                                                                    /**/
-  width:100%;                                                                       /**/
-  height: 250px;                                                                    /**/
-  overflow: hidden;                                                                 /**/
-                                                                                    /**/
-  }                                                                                 /**/
-  .slider ul{                                                                       /**/
-    display: flex;                                                                  /**/
-    animation: cambio 20s infinite alternate linear;                                /**/
-    width: 400%;                                                                    /**/
-  }                                                                                 /**/
-                                                                                    /**/
-  .slider li{                                                                       /**/
-    width: 100%;                                                                    /**/
-    list-style: none;                                                               /**/
-  }                                                                                 /**/
-                                                                                    /**/
-  .slider img{                                                                      /**/           
-                                                                                    /**/
-    width: 100%;                                                                    /**/
-    height: 50%;                                                                    /**/    
-  }                                                                                 /**/
-                                                                                    /**/
-@keyframes cambio{                                                                  /**/
-    0%{margin-left: 0;}                                                             /**/
-    20%{margin-left: 0;}                                                            /**/
-                                                                                    /**/
-    25%{margin-left: -100%;}                                                        /**/
-    45%{margin-left: -100%;}                                                        /**/
-                                                                                    /**/
-    50%{margin-left: -200%;}                                                        /**/
-    70%{margin-left: -200%;}                                                        /**/
-                                                                                    /**/
-    75%{margin-left: -300%;}                                                        /**/
-    100%{margin-left: -300%;}                                                       /**/
-  }                                                                                 /**/
-                                                                                    /**/
+.slider{                                                                          /**/
+                                                                                  /**/
+width:100%;                                                                       /**/
+overflow: hidden;                                                                 /**/
+                                                                                  /**/
+}                                                                                 /**/
+.slider ul{                                                                       /**/
+  display: flex;                                                                  /**/
+  animation: cambio 20s infinite alternate linear;                                /**/
+  width: 400%;                                                                    /**/
+  height: 200px;  
+}                                                                                 /**/
+                                                                                  /**/
+.slider li{                                                                       /**/
+  width: 100%;                                                                    /**/
+  list-style: none;                                                               /**/
+}                                                                                 /**/
+                                                                                  /**/
+.slider img{                                                                      /**/           
+                                                                                  /**/
+  width: 100%;                                                                    /**/
+  height: 100%;                                                                   /**/    
+}                                                                                 /**/
+                                                                                  /**/
+@keyframes cambio{                                                                /**/
+  0%{margin-left: 0;}                                                             /**/
+  20%{margin-left: 0;}                                                            /**/
+                                                                                  /**/
+  25%{margin-left: -100%;}                                                        /**/
+  45%{margin-left: -100%;}                                                        /**/
+                                                                                  /**/
+  50%{margin-left: -200%;}                                                        /**/
+  70%{margin-left: -200%;}                                                        /**/
+                                                                                  /**/
+  75%{margin-left: -300%;}                                                        /**/
+  100%{margin-left: -300%;}                                                       /**/
+}                                                                                 /**/
+                                                                                  /**/
 /*<<<<<<<<<<<<<<<<<<<<<< fin de animacion de imagens   >>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 
+.noticia{
+  text-align: center;
+  background-color: #868676;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  color: white;
+  font-size: 25px;
+  font-family: sans-serif;
+  margin: 20px; 
+}
+
+
+
+video{
+  width: 300px;                                                                    /**/
+  height: 560px; 
+  padding: 30px; ;
+}
+
+.videos-container{
+  text-align:justify;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+}
+
+.trabajo li{
+  margin:40px;
+  width: 200px; 
+  text-align: center;
+
+
+}
+
+
+
+.trabajo{
+  text-align:justify;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+
+}
 
 
 
 
 
-  footer{
-    color: white;
-    background-color: red;
-    background: red;
-    font-size: 25px;
-    font-family: sans-serif;
-  }
 
 
-  .noticia{
-    color: white;
-    font-size: 25px;
-    font-family: sans-serif;
-  }
+footer{
+  color: white;
+  background-color: red;
+  background: red;
+  font-size: 25px;
+  font-family: sans-serif;
+}
 
-  .revoque{
-    height: 400px;
-    margin: 20px;
-  }
+
+
+
